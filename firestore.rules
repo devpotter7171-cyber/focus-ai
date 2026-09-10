@@ -1,0 +1,97 @@
+rules_version = '2';
+
+// Focus-AI Firestore security rules.
+// Pattern: only authenticated users may read/write, and only the data they own.
+// Adjust the per-collection rules below if you add new collections.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper: is the request from the signed-in owner of this user-scoped doc?
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // ----- User profile + nested per-user data -----
+    match /users/{uid} {
+      allow read, write: if isOwner(uid);
+
+      // Per-user subcollections (flashcard_progress, progress, mastery, etc.)
+      match /{sub}/{docId} {
+        allow read, write: if isOwner(uid);
+      }
+    }
+
+    // ----- Catalog data (read-only for signed-in clients) -----
+    match /courses/{courseId} {
+      allow read: if isSignedIn();
+      allow write: if false; // seeded server-side via Admin SDK
+      match /{sub=**} {
+        allow read: if isSignedIn();
+        allow write: if false;
+      }
+    }
+
+    match /quiz/{quizId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+      match /{sub=**} {
+        allow read: if isSignedIn();
+        allow write: if false;
+      }
+    }
+
+    match /flashcards/{cardId} {
+      allow read: if isSignedIn();
+      allow write: if false; // global library, server-managed
+    }
+
+    // ----- Telemetry the client may append to (server reads aggregate) -----
+    match /behavior_logs/{docId} {
+      allow create: if isSignedIn() && request.resource.data.user_id == request.auth.uid;
+      allow read, update, delete: if false;
+    }
+
+    match /user_feedback/{docId} {
+      allow create: if isSignedIn() && request.resource.data.user_id == request.auth.uid;
+      allow read, update, delete: if false;
+    }
+
+    match /confusion_events/{docId} {
+      allow create: if isSignedIn() && request.resource.data.user_id == request.auth.uid;
+      allow read, update, delete: if false;
+    }
+
+    match /intervention_logs/{docId} {
+      // Server-side writes via Admin SDK; clients have no business reading this.
+      allow read, write: if false;
+    }
+
+    match /quiz_results/{docId} {
+      allow create: if isSignedIn() && request.resource.data.user_id == request.auth.uid;
+      allow read: if isSignedIn() && resource.data.user_id == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    match /user_answers/{docId} {
+      allow create: if isSignedIn() && request.resource.data.user_id == request.auth.uid;
+      allow read: if isSignedIn() && resource.data.user_id == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    match /learning_assessment/{docId} {
+      allow create: if isSignedIn() && request.resource.data.user_id == request.auth.uid;
+      allow read: if isSignedIn() && resource.data.user_id == request.auth.uid;
+      allow update: if isSignedIn() && resource.data.user_id == request.auth.uid;
+      allow delete: if false;
+    }
+
+    // Default deny for anything not explicitly allowed above.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

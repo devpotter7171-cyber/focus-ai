@@ -1,0 +1,28 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "behavior_logs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "user_id", "mode": "ASCENDING" },
+        { "fieldPath": "timestamp", "mode": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "confusion_events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "user_id", "mode": "ASCENDING" },
+        { "fieldPath": "timestamp", "mode": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "course_id", "mode": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

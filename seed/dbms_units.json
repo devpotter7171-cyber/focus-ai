@@ -1,0 +1,38 @@
+[
+  {
+    "id": "u1",
+    "title": "Introduction to Database Systems & ER Model",
+    "description": "Foundations of databases, Three-schema architecture, and Data Modeling using the ER Model.",
+    "order": 1
+  },
+  {
+    "id": "u2",
+    "title": "Relational Model & Algebra",
+    "description": "Refining ER design, Relational concepts, constraints, and Relational Algebra operations.",
+    "order": 2
+  },
+  {
+    "id": "u3",
+    "title": "SQL & Relational Database Design",
+    "description": "SQL basics, complex queries, Functional Dependencies, and Normalization (1NF to BCNF).",
+    "order": 3
+  },
+  {
+    "id": "u4",
+    "title": "Transaction Processing & Concurrency",
+    "description": "Transaction states, properties (ACID), Serializability, and Concurrency Control (2PL).",
+    "order": 4
+  },
+  {
+    "id": "u5",
+    "title": "NoSQL & Big Data",
+    "description": "NoSQL data models, Distribution models, Big Data types, and Distributed Architectures.",
+    "order": 5
+  },
+  {
+    "id": "u6",
+    "title": "Advanced Topics: Indexing & Warehousing",
+    "description": "Physical storage, Indexing structures, Query Optimization, and Data Warehousing concepts.",
+    "order": 6
+  }
+]

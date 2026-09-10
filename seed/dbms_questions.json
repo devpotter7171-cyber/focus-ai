@@ -1,0 +1,1489 @@
+[
+  {
+    "id": "q_rel_001",
+    "unit_id": "u2",
+    "subtopic_id": "relational-model-concepts",
+    "question_text": "What is the primary key in a relational database?",
+    "options": [
+      "A unique identifier for each record in a table",
+      "A foreign key that references another table",
+      "Any column that contains numeric values",
+      "The first column in every table"
+    ],
+    "correct_answer": 0,
+    "difficulty": "easy",
+    "skill_tags": [
+      "relational_model",
+      "keys"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_rel_002",
+    "unit_id": "u2",
+    "subtopic_id": "relational-model-concepts",
+    "question_text": "Which property must a relation satisfy according to the relational model?",
+    "options": [
+      "All rows must be identical",
+      "Each cell must contain atomic values",
+      "Columns can have duplicate names",
+      "Order of rows matters"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "relational_model",
+      "atomicity"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_sql_001",
+    "unit_id": "u3",
+    "subtopic_id": "introduction-to-sql",
+    "question_text": "Which SQL command is used to retrieve data from a database?",
+    "options": [
+      "GET",
+      "FETCH",
+      "SELECT",
+      "RETRIEVE"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "sql_basics",
+      "dml"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_sql_002",
+    "unit_id": "u3",
+    "subtopic_id": "introduction-to-sql",
+    "question_text": "What is the purpose of the WHERE clause in SQL?",
+    "options": [
+      "To sort the results",
+      "To filter rows based on a condition",
+      "To join two tables",
+      "To group results"
+    ],
+    "correct_answer": 1,
+    "difficulty": "easy",
+    "skill_tags": [
+      "sql_basics",
+      "filtering"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_norm_001",
+    "unit_id": "u3",
+    "subtopic_id": "normal-forms-1nf-3nf",
+    "question_text": "What is the main requirement for a table to be in First Normal Form (1NF)?",
+    "options": [
+      "No repeating groups or arrays",
+      "All non-key attributes depend on the entire primary key",
+      "No transitive dependencies",
+      "At least three columns"
+    ],
+    "correct_answer": 0,
+    "difficulty": "medium",
+    "skill_tags": [
+      "normalization",
+      "1nf"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_norm_002",
+    "unit_id": "u3",
+    "subtopic_id": "normal-forms-1nf-3nf",
+    "question_text": "To convert a table from 1NF to 2NF, you must eliminate:",
+    "options": [
+      "Null values",
+      "Partial dependencies",
+      "Transitive dependencies",
+      "Multivalued dependencies"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "normalization",
+      "2nf",
+      "dependencies"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_norm_003",
+    "unit_id": "u3",
+    "subtopic_id": "normal-forms-1nf-3nf",
+    "question_text": "A table is in Third Normal Form (3NF) if it is in 2NF and:",
+    "options": [
+      "Contains no null values",
+      "Has at least one foreign key",
+      "Has no transitive dependencies on the primary key",
+      "Uses only integer primary keys"
+    ],
+    "correct_answer": 2,
+    "difficulty": "medium",
+    "skill_tags": [
+      "normalization",
+      "3nf",
+      "transitive_dependency"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_er_001",
+    "unit_id": "u1",
+    "subtopic_id": "er-model-concepts",
+    "question_text": "In an ER diagram, what does a diamond shape represent?",
+    "options": [
+      "An entity",
+      "An attribute",
+      "A relationship",
+      "A primary key"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "er_diagrams",
+      "relationships"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_er_002",
+    "unit_id": "u1",
+    "subtopic_id": "relationships-constraints",
+    "question_text": "What is a weak entity in ER modeling?",
+    "options": [
+      "An entity with no attributes",
+      "An entity that cannot be uniquely identified without a related entity",
+      "An entity with only one attribute",
+      "An entity that has been deleted"
+    ],
+    "correct_answer": 1,
+    "difficulty": "hard",
+    "skill_tags": [
+      "er_diagrams",
+      "weak_entity"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_trans_001",
+    "unit_id": "u4",
+    "subtopic_id": "transaction-concepts",
+    "question_text": "What does the 'A' in ACID properties stand for?",
+    "options": [
+      "Availability",
+      "Atomicity",
+      "Accuracy",
+      "Authentication"
+    ],
+    "correct_answer": 1,
+    "difficulty": "easy",
+    "skill_tags": [
+      "transactions",
+      "acid"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_trans_002",
+    "unit_id": "u4",
+    "subtopic_id": "transaction-concepts",
+    "question_text": "Which ACID property ensures that a transaction is treated as a single unit of work?",
+    "options": [
+      "Consistency",
+      "Isolation",
+      "Durability",
+      "Atomicity"
+    ],
+    "correct_answer": 3,
+    "difficulty": "medium",
+    "skill_tags": [
+      "transactions",
+      "acid",
+      "atomicity"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_trans_003",
+    "unit_id": "u4",
+    "subtopic_id": "transaction-concepts",
+    "question_text": "The Isolation property of ACID ensures that:",
+    "options": [
+      "Data is saved permanently after commit",
+      "Concurrent transactions do not interfere with each other",
+      "All constraints are satisfied after transaction",
+      "Transaction cannot be interrupted"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "transactions",
+      "acid",
+      "isolation"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_idx_001",
+    "unit_id": "u6",
+    "subtopic_id": "indexing",
+    "question_text": "What is the primary purpose of database indexing?",
+    "options": [
+      "To save storage space",
+      "To speed up data retrieval",
+      "To encrypt data",
+      "To backup data"
+    ],
+    "correct_answer": 1,
+    "difficulty": "easy",
+    "skill_tags": [
+      "indexing",
+      "performance"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_idx_002",
+    "unit_id": "u6",
+    "subtopic_id": "indexing",
+    "question_text": "Which data structure is commonly used for implementing database indexes?",
+    "options": [
+      "Linked List",
+      "Array",
+      "B+ Tree",
+      "Stack"
+    ],
+    "correct_answer": 2,
+    "difficulty": "medium",
+    "skill_tags": [
+      "indexing",
+      "btree"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_opt_001",
+    "unit_id": "u6",
+    "subtopic_id": "query-optimization",
+    "question_text": "What is the role of a query optimizer in a DBMS?",
+    "options": [
+      "To execute queries faster than users type them",
+      "To find the most efficient execution plan for a query",
+      "To prevent users from running slow queries",
+      "To cache all query results"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "query_optimization",
+      "execution_plan"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_nosql_001",
+    "unit_id": "u5",
+    "subtopic_id": "introduction-to-nosql",
+    "question_text": "Which of the following is a characteristic of NoSQL databases?",
+    "options": [
+      "Strict schema enforcement",
+      "ACID compliance by default",
+      "Horizontal scalability",
+      "Complex join operations"
+    ],
+    "correct_answer": 2,
+    "difficulty": "medium",
+    "skill_tags": [
+      "nosql",
+      "scalability"
+    ],
+    "textbook_reference": "Pramod J Sadalage & Martin Fowler"
+  },
+  {
+    "id": "q_nosql_002",
+    "unit_id": "u5",
+    "subtopic_id": "introduction-to-nosql",
+    "question_text": "MongoDB is an example of which type of NoSQL database?",
+    "options": [
+      "Key-Value Store",
+      "Column Family",
+      "Document Store",
+      "Graph Database"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "nosql",
+      "document_store"
+    ],
+    "textbook_reference": "Pramod J Sadalage & Martin Fowler"
+  },
+  {
+    "id": "q_dw_001",
+    "unit_id": "u6",
+    "subtopic_id": "data-warehousing",
+    "question_text": "What is OLAP in the context of data warehousing?",
+    "options": [
+      "Online Authentication and Login Protocol",
+      "Online Analytical Processing",
+      "Offline Logging and Processing",
+      "Online Application Platform"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "data_warehousing",
+      "olap"
+    ],
+    "textbook_reference": "Seema Acharya"
+  },
+  {
+    "id": "q_dw_002",
+    "unit_id": "u6",
+    "subtopic_id": "data-warehousing",
+    "question_text": "What is a 'star schema' in data warehouse design?",
+    "options": [
+      "A schema shaped like a star in the physical storage",
+      "A schema with a central fact table connected to dimension tables",
+      "A schema that uses star-shaped primary keys",
+      "A schema that stores data from five sources"
+    ],
+    "correct_answer": 1,
+    "difficulty": "hard",
+    "skill_tags": [
+      "data_warehousing",
+      "star_schema"
+    ],
+    "textbook_reference": "Seema Acharya"
+  },
+  {
+    "id": "q_rel_003",
+    "unit_id": "u2",
+    "subtopic_id": "relational-model-concepts",
+    "question_text": "What is a foreign key?",
+    "options": [
+      "A key from a foreign database",
+      "A key that references the primary key of another table",
+      "A key that cannot be searched",
+      "An encrypted primary key"
+    ],
+    "correct_answer": 1,
+    "difficulty": "easy",
+    "skill_tags": [
+      "relational_model",
+      "foreign_key"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_sql_003",
+    "unit_id": "u3",
+    "subtopic_id": "introduction-to-sql",
+    "question_text": "Which SQL keyword is used to sort the result-set?",
+    "options": [
+      "SORT BY",
+      "ORDER BY",
+      "ALIGN BY",
+      "GROUP BY"
+    ],
+    "correct_answer": 1,
+    "difficulty": "easy",
+    "skill_tags": [
+      "sql_basics",
+      "sorting"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_sql_004",
+    "unit_id": "u3",
+    "subtopic_id": "introduction-to-sql",
+    "question_text": "What is the correct syntax to select all columns from a table named 'Customers'?",
+    "options": [
+      "SELECT ALL FROM Customers",
+      "SELECT Customers",
+      "SELECT * FROM Customers",
+      "SELECT [all] FROM Customers"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "sql_basics",
+      "select"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_er_003",
+    "unit_id": "u1",
+    "subtopic_id": "er-model-concepts",
+    "question_text": "What does an ellipse represent in an ER diagram?",
+    "options": [
+      "Entity",
+      "Attribute",
+      "Relationship",
+      "Primary Key"
+    ],
+    "correct_answer": 1,
+    "difficulty": "easy",
+    "skill_tags": [
+      "er_diagrams",
+      "er_symbols"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_trans_004",
+    "unit_id": "u4",
+    "subtopic_id": "transaction-concepts",
+    "question_text": "Which isolation level prevents dirty reads but allows non-repeatable reads?",
+    "options": [
+      "Read Uncommitted",
+      "Read Committed",
+      "Repeatable Read",
+      "Serializable"
+    ],
+    "correct_answer": 1,
+    "difficulty": "hard",
+    "skill_tags": [
+      "transactions",
+      "isolation_levels"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_idx_003",
+    "unit_id": "u6",
+    "subtopic_id": "indexing",
+    "question_text": "Clustered indexes determine the _____ order of data in a table.",
+    "options": [
+      "Logical",
+      "Physical",
+      "Chronological",
+      "Alphabetical"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "indexing",
+      "clustered_index"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_nosql_003",
+    "unit_id": "u5",
+    "subtopic_id": "introduction-to-nosql",
+    "question_text": "Which theorem states availability, consistency, and partition tolerance cannot be achieved simultaneously?",
+    "options": [
+      "ACID Theorem",
+      "CAP Theorem",
+      "BASE Theorem",
+      "NoSQL Theorem"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "nosql",
+      "cap_theorem"
+    ],
+    "textbook_reference": "Pramod J Sadalage & Martin Fowler"
+  },
+  {
+    "id": "q_rel_004",
+    "unit_id": "u2",
+    "subtopic_id": "relational-model-concepts",
+    "question_text": "The number of tuples in a relation is called its _____.",
+    "options": [
+      "Degree",
+      "Cardinality",
+      "Domain",
+      "Schema"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "relational_model",
+      "cardinality"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_rel_005",
+    "unit_id": "u2",
+    "subtopic_id": "relational-model-concepts",
+    "question_text": "The number of attributes in a relation is called its _____.",
+    "options": [
+      "Degree",
+      "Cardinality",
+      "Tuple Count",
+      "Size"
+    ],
+    "correct_answer": 0,
+    "difficulty": "medium",
+    "skill_tags": [
+      "relational_model",
+      "degree"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_join_001",
+    "unit_id": "u3",
+    "subtopic_id": "introduction-to-sql",
+    "question_text": "Which join returns all records when there is a match in either left or right table?",
+    "options": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "FULL OUTER JOIN"
+    ],
+    "correct_answer": 3,
+    "difficulty": "medium",
+    "skill_tags": [
+      "sql_basics",
+      "joins"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_agg_001",
+    "unit_id": "u3",
+    "subtopic_id": "introduction-to-sql",
+    "question_text": "Which function is used to count the number of rows?",
+    "options": [
+      "SUM()",
+      "TOTAL()",
+      "COUNT()",
+      "ADD()"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "sql_basics",
+      "aggregation"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_lock_001",
+    "unit_id": "u4",
+    "subtopic_id": "transaction-concepts",
+    "question_text": "What is a deadlock?",
+    "options": [
+      "A secure lock on the database",
+      "Two or more transactions waiting for each other indefinitely",
+      "A transaction that completes instantly",
+      "An error in database design"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "transactions",
+      "deadlock"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_dist_001",
+    "unit_id": "u5",
+    "subtopic_id": "introduction-to-nosql",
+    "question_text": "What is sharding?",
+    "options": [
+      "Backing up data",
+      "Horizontal partitioning of data across servers",
+      "Encrypting data",
+      "Merging two tables"
+    ],
+    "correct_answer": 1,
+    "difficulty": "hard",
+    "skill_tags": [
+      "nosql",
+      "sharding"
+    ],
+    "textbook_reference": "Pramod J Sadalage & Martin Fowler"
+  },
+  {
+    "id": "q_sec_001",
+    "unit_id": "u3",
+    "subtopic_id": "introduction-to-sql",
+    "question_text": "Which command is used to remove a table definition and its data?",
+    "options": [
+      "DELETE TABLE",
+      "REMOVE TABLE",
+      "DROP TABLE",
+      "CLEAR TABLE"
+    ],
+    "correct_answer": 2,
+    "difficulty": "medium",
+    "skill_tags": [
+      "sql_basics",
+      "ddl"
+    ],
+    "textbook_reference": "Raghu Ramakrishnan & Johannes Gehrke"
+  },
+  {
+    "id": "q_intro_001",
+    "unit_id": "u1",
+    "subtopic_id": "intro-to-database-systems",
+    "question_text": "Which of the following is the primary advantage of using a DBMS over a flat-file system?",
+    "options": [
+      "Faster CPU execution speed",
+      "Reduced data redundancy and improved consistency",
+      "Smaller program file sizes",
+      "Direct access to physical disk sectors"
+    ],
+    "correct_answer": 1,
+    "difficulty": "easy",
+    "skill_tags": [
+      "dbms_basics",
+      "data_independence"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_intro_002",
+    "unit_id": "u1",
+    "subtopic_id": "intro-to-database-systems",
+    "question_text": "Who is primarily responsible for authorizing access and monitoring use of the database?",
+    "options": [
+      "End User",
+      "Application Programmer",
+      "Database Administrator (DBA)",
+      "Database Designer"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "dbms_roles"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_intro_003",
+    "unit_id": "u1",
+    "subtopic_id": "intro-to-database-systems",
+    "question_text": "Which characteristic of the database approach allows the structure of data to change without requiring changes to application programs?",
+    "options": [
+      "Self-describing nature",
+      "Data abstraction",
+      "Program-data independence",
+      "Concurrency control"
+    ],
+    "correct_answer": 2,
+    "difficulty": "medium",
+    "skill_tags": [
+      "data_independence"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_dms_001",
+    "unit_id": "u1",
+    "subtopic_id": "data-models-schemas",
+    "question_text": "In the three-schema architecture, which level describes how data is physically stored?",
+    "options": [
+      "External level",
+      "Conceptual level",
+      "Internal level",
+      "Application level"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "three_schema"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_dms_002",
+    "unit_id": "u1",
+    "subtopic_id": "data-models-schemas",
+    "question_text": "Logical data independence is the ability to change which schema without affecting the others above it?",
+    "options": [
+      "External",
+      "Conceptual",
+      "Internal",
+      "Physical storage"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "data_independence"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_dms_003",
+    "unit_id": "u1",
+    "subtopic_id": "data-models-schemas",
+    "question_text": "Which category of data model is the Entity-Relationship model?",
+    "options": [
+      "Physical / low-level",
+      "Implementation / representational",
+      "Conceptual / high-level",
+      "View-level"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "data_models"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_refer_001",
+    "unit_id": "u2",
+    "subtopic_id": "refining-er-design",
+    "question_text": "If an attribute has its own properties (e.g. street, city, zip), it is usually best modelled as:",
+    "options": [
+      "A simple attribute",
+      "A multi-valued attribute",
+      "A separate entity",
+      "A derived attribute"
+    ],
+    "correct_answer": 2,
+    "difficulty": "medium",
+    "skill_tags": [
+      "er_refinement"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_refer_002",
+    "unit_id": "u2",
+    "subtopic_id": "refining-er-design",
+    "question_text": "Which is a *redundant* relationship in an ER diagram?",
+    "options": [
+      "A relationship that already follows from a chain of other relationships",
+      "A relationship that has more than two participating entities",
+      "A relationship with total participation",
+      "A relationship between weak and strong entity types"
+    ],
+    "correct_answer": 0,
+    "difficulty": "medium",
+    "skill_tags": [
+      "er_refinement"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_refer_003",
+    "unit_id": "u2",
+    "subtopic_id": "refining-er-design",
+    "question_text": "Per standard naming conventions, relationship types are best named as:",
+    "options": [
+      "Singular nouns",
+      "Plural nouns",
+      "Verbs or verb phrases",
+      "Lowercase abbreviations"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "er_naming"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_upd_001",
+    "unit_id": "u2",
+    "subtopic_id": "update-operations",
+    "question_text": "What does the CASCADE option do when a referenced row is deleted?",
+    "options": [
+      "Rejects the delete operation",
+      "Sets the foreign key to NULL",
+      "Propagates the delete to all related child rows",
+      "Logs the violation but allows the delete"
+    ],
+    "correct_answer": 2,
+    "difficulty": "medium",
+    "skill_tags": [
+      "referential_integrity"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_upd_002",
+    "unit_id": "u2",
+    "subtopic_id": "update-operations",
+    "question_text": "Inserting a row whose foreign key value does not exist in the parent table violates which constraint?",
+    "options": [
+      "Entity integrity",
+      "Domain",
+      "Referential integrity",
+      "Key uniqueness"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "referential_integrity"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_upd_003",
+    "unit_id": "u2",
+    "subtopic_id": "update-operations",
+    "question_text": "Which operation does NOT change the state of the database?",
+    "options": [
+      "INSERT",
+      "UPDATE",
+      "DELETE",
+      "SELECT"
+    ],
+    "correct_answer": 3,
+    "difficulty": "easy",
+    "skill_tags": [
+      "dml_basics"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_unary_001",
+    "unit_id": "u2",
+    "subtopic_id": "unary-relational-operations",
+    "question_text": "Which relational algebra operation filters tuples (rows) based on a predicate?",
+    "options": [
+      "PROJECT (\u03c0)",
+      "SELECT (\u03c3)",
+      "JOIN (\u22c8)",
+      "UNION (\u222a)"
+    ],
+    "correct_answer": 1,
+    "difficulty": "easy",
+    "skill_tags": [
+      "relational_algebra"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_unary_002",
+    "unit_id": "u2",
+    "subtopic_id": "unary-relational-operations",
+    "question_text": "Which relational algebra operation chooses specific attributes (columns) and removes duplicates?",
+    "options": [
+      "SELECT (\u03c3)",
+      "PROJECT (\u03c0)",
+      "RENAME (\u03c1)",
+      "DIVISION (\u00f7)"
+    ],
+    "correct_answer": 1,
+    "difficulty": "easy",
+    "skill_tags": [
+      "relational_algebra"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_unary_003",
+    "unit_id": "u2",
+    "subtopic_id": "unary-relational-operations",
+    "question_text": "If a relation has 100 tuples, the result of \u03c3_condition(R) is at most how many tuples?",
+    "options": [
+      "Exactly 100",
+      "Exactly 1",
+      "At most 100",
+      "Always 0"
+    ],
+    "correct_answer": 2,
+    "difficulty": "medium",
+    "skill_tags": [
+      "relational_algebra",
+      "cardinality"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_setalg_001",
+    "unit_id": "u2",
+    "subtopic_id": "relational-algebra-set-theory",
+    "question_text": "Two relations are *union-compatible* when they:",
+    "options": [
+      "Have the same number of tuples",
+      "Have the same degree and compatible domains",
+      "Share at least one common attribute name",
+      "Are stored in the same disk file"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "set_operations",
+      "union_compatibility"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_setalg_002",
+    "unit_id": "u2",
+    "subtopic_id": "relational-algebra-set-theory",
+    "question_text": "Which set operation is NOT commutative?",
+    "options": [
+      "UNION",
+      "INTERSECTION",
+      "SET DIFFERENCE",
+      "CARTESIAN PRODUCT"
+    ],
+    "correct_answer": 2,
+    "difficulty": "medium",
+    "skill_tags": [
+      "set_operations"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_setalg_003",
+    "unit_id": "u2",
+    "subtopic_id": "relational-algebra-set-theory",
+    "question_text": "R \u2229 S returns:",
+    "options": [
+      "Tuples in R or S or both",
+      "Tuples in R but not in S",
+      "Tuples present in both R and S",
+      "All combinations of tuples from R and S"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "set_operations"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_binary_001",
+    "unit_id": "u2",
+    "subtopic_id": "binary-relational-operations",
+    "question_text": "If R has n tuples and S has m tuples, R \u00d7 S (Cartesian product) has how many tuples?",
+    "options": [
+      "n + m",
+      "max(n, m)",
+      "n \u00d7 m",
+      "n - m"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "cartesian_product"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_binary_002",
+    "unit_id": "u2",
+    "subtopic_id": "binary-relational-operations",
+    "question_text": "A natural join differs from a theta-join because:",
+    "options": [
+      "It joins on attributes with the same name and removes duplicate columns",
+      "It always uses inequality conditions",
+      "It produces the Cartesian product",
+      "It only works on tables with no foreign keys"
+    ],
+    "correct_answer": 0,
+    "difficulty": "medium",
+    "skill_tags": [
+      "join_types"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_binary_003",
+    "unit_id": "u2",
+    "subtopic_id": "binary-relational-operations",
+    "question_text": "Which operation is used for \"find students who took ALL courses offered by Prof. X\"?",
+    "options": [
+      "JOIN",
+      "DIVISION",
+      "UNION",
+      "PROJECT"
+    ],
+    "correct_answer": 1,
+    "difficulty": "hard",
+    "skill_tags": [
+      "division",
+      "relational_algebra"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_raq_001",
+    "unit_id": "u2",
+    "subtopic_id": "relational-algebra-queries",
+    "question_text": "Which heuristic optimisation typically reduces query cost the most?",
+    "options": [
+      "Pushing SELECT (\u03c3) operations down the tree",
+      "Performing JOIN before SELECT",
+      "Computing the Cartesian product first",
+      "Using PROJECT only at the very end"
+    ],
+    "correct_answer": 0,
+    "difficulty": "medium",
+    "skill_tags": [
+      "query_optimization"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_raq_002",
+    "unit_id": "u2",
+    "subtopic_id": "relational-algebra-queries",
+    "question_text": "Which expression is equivalent to \u03c0_name(\u03c3_age>25(Student))?",
+    "options": [
+      "\u03c3_name(\u03c0_age>25(Student))",
+      "Project name first, then filter on age",
+      "Filter rows on age>25, then project the name column",
+      "Cross-product of Student with itself"
+    ],
+    "correct_answer": 2,
+    "difficulty": "medium",
+    "skill_tags": [
+      "relational_algebra"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_raq_003",
+    "unit_id": "u2",
+    "subtopic_id": "relational-algebra-queries",
+    "question_text": "In an evaluation tree, the leaves represent:",
+    "options": [
+      "Final result",
+      "Intermediate joins",
+      "Input relations",
+      "User credentials"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "query_evaluation"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_dml_001",
+    "unit_id": "u3",
+    "subtopic_id": "dml-operations",
+    "question_text": "Which clause limits the rows shown by a SELECT query?",
+    "options": [
+      "GROUP BY",
+      "ORDER BY",
+      "WHERE",
+      "HAVING"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "sql_select"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_dml_002",
+    "unit_id": "u3",
+    "subtopic_id": "dml-operations",
+    "question_text": "What does HAVING do that WHERE cannot?",
+    "options": [
+      "Filter individual rows",
+      "Filter rows after a GROUP BY aggregation",
+      "Sort the result set",
+      "Limit the number of returned rows"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "sql_aggregation"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_dml_003",
+    "unit_id": "u3",
+    "subtopic_id": "dml-operations",
+    "question_text": "What is the safest way to inject user input into a SQL query from application code?",
+    "options": [
+      "String concatenation",
+      "Parameterised / prepared statements",
+      "Stored as JSON",
+      "Escaping single quotes manually"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "sql_security",
+      "sql_injection"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_fd_001",
+    "unit_id": "u3",
+    "subtopic_id": "functional-dependencies",
+    "question_text": "If X \u2192 Y and Y \u2192 Z, then X \u2192 Z. This is which inference rule?",
+    "options": [
+      "Reflexive",
+      "Augmentation",
+      "Transitivity",
+      "Decomposition"
+    ],
+    "correct_answer": 2,
+    "difficulty": "easy",
+    "skill_tags": [
+      "functional_dependencies",
+      "armstrongs_axioms"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_fd_002",
+    "unit_id": "u3",
+    "subtopic_id": "functional-dependencies",
+    "question_text": "Which functional dependency is *trivial*?",
+    "options": [
+      "Name \u2192 SSN",
+      "{SSN, Name} \u2192 Name",
+      "DOB \u2192 Age",
+      "Salary \u2192 Name"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "functional_dependencies"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_fd_003",
+    "unit_id": "u3",
+    "subtopic_id": "functional-dependencies",
+    "question_text": "An attribute that uniquely determines all other attributes in a relation is called a:",
+    "options": [
+      "Foreign key",
+      "Superkey",
+      "Composite attribute",
+      "Multi-valued attribute"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "keys",
+      "functional_dependencies"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_bcnf_001",
+    "unit_id": "u3",
+    "subtopic_id": "bcnf-decompositions",
+    "question_text": "A relation is in BCNF if for every non-trivial dependency X \u2192 A:",
+    "options": [
+      "X is a superkey",
+      "A is part of a candidate key",
+      "X is not a key",
+      "A is a multi-valued attribute"
+    ],
+    "correct_answer": 0,
+    "difficulty": "medium",
+    "skill_tags": [
+      "bcnf"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_bcnf_002",
+    "unit_id": "u3",
+    "subtopic_id": "bcnf-decompositions",
+    "question_text": "Which property guarantees that joining the decomposed tables reproduces the original relation?",
+    "options": [
+      "Dependency preservation",
+      "Lossless-join property",
+      "Atomicity",
+      "Referential integrity"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "decomposition"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_bcnf_003",
+    "unit_id": "u3",
+    "subtopic_id": "bcnf-decompositions",
+    "question_text": "A relation is always in 3NF if it is in:",
+    "options": [
+      "1NF",
+      "2NF only",
+      "BCNF",
+      "0NF"
+    ],
+    "correct_answer": 2,
+    "difficulty": "medium",
+    "skill_tags": [
+      "normal_forms"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_sched_001",
+    "unit_id": "u4",
+    "subtopic_id": "schedules-serializability",
+    "question_text": "Two operations from different transactions *conflict* when:",
+    "options": [
+      "Both are reads on the same item",
+      "They access different items",
+      "They access the same item and at least one is a write",
+      "They run in parallel on the same CPU"
+    ],
+    "correct_answer": 2,
+    "difficulty": "medium",
+    "skill_tags": [
+      "serializability",
+      "conflicts"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_sched_002",
+    "unit_id": "u4",
+    "subtopic_id": "schedules-serializability",
+    "question_text": "Which best describes a serializable schedule?",
+    "options": [
+      "Operations of each transaction run consecutively without interleaving",
+      "An interleaved schedule whose result is equivalent to some serial schedule",
+      "Any schedule that finishes within the deadline",
+      "A schedule with no read operations"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "serializability"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_sched_003",
+    "unit_id": "u4",
+    "subtopic_id": "schedules-serializability",
+    "question_text": "Why are serial schedules correct but undesirable?",
+    "options": [
+      "They may produce wrong results",
+      "They are correct but achieve no concurrency, hurting throughput",
+      "They cannot be tested for serializability",
+      "They violate the ACID properties"
+    ],
+    "correct_answer": 1,
+    "difficulty": "easy",
+    "skill_tags": [
+      "serializability"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_test_001",
+    "unit_id": "u4",
+    "subtopic_id": "testing-serializability",
+    "question_text": "A schedule is conflict-serializable iff its precedence graph is:",
+    "options": [
+      "Cyclic",
+      "Acyclic",
+      "Bipartite",
+      "Connected"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "precedence_graph"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_test_002",
+    "unit_id": "u4",
+    "subtopic_id": "testing-serializability",
+    "question_text": "In the precedence graph, an edge from Ti to Tj means:",
+    "options": [
+      "Ti committed before Tj",
+      "Ti has an operation that conflicts with and precedes one in Tj",
+      "Tj depends on Ti's lock manager",
+      "Ti and Tj are merged into one transaction"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "precedence_graph"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_test_003",
+    "unit_id": "u4",
+    "subtopic_id": "testing-serializability",
+    "question_text": "A cycle in the precedence graph implies:",
+    "options": [
+      "The schedule is conflict-serializable",
+      "The schedule is NOT conflict-serializable",
+      "A deadlock has already occurred",
+      "All transactions read the same item"
+    ],
+    "correct_answer": 1,
+    "difficulty": "easy",
+    "skill_tags": [
+      "precedence_graph"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_cc_001",
+    "unit_id": "u4",
+    "subtopic_id": "concurrency-control",
+    "question_text": "In two-phase locking (2PL), once a transaction *releases* a lock, it:",
+    "options": [
+      "May acquire new locks freely",
+      "May acquire shared locks only",
+      "May not acquire any new locks",
+      "Must abort immediately"
+    ],
+    "correct_answer": 2,
+    "difficulty": "medium",
+    "skill_tags": [
+      "two_phase_locking"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_cc_002",
+    "unit_id": "u4",
+    "subtopic_id": "concurrency-control",
+    "question_text": "Which locking variant prevents cascading aborts?",
+    "options": [
+      "Basic 2PL",
+      "Conservative 2PL",
+      "Strict 2PL",
+      "Optimistic concurrency"
+    ],
+    "correct_answer": 2,
+    "difficulty": "hard",
+    "skill_tags": [
+      "two_phase_locking"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_cc_003",
+    "unit_id": "u4",
+    "subtopic_id": "concurrency-control",
+    "question_text": "An exclusive (X) lock prevents:",
+    "options": [
+      "Both reads and writes by other transactions",
+      "Only writes by other transactions",
+      "Only reads by other transactions",
+      "Nothing \u2014 it is advisory only"
+    ],
+    "correct_answer": 0,
+    "difficulty": "easy",
+    "skill_tags": [
+      "locking"
+    ],
+    "textbook_reference": "Elmasri & Navathe"
+  },
+  {
+    "id": "q_dist_002",
+    "unit_id": "u5",
+    "subtopic_id": "distribution-models",
+    "question_text": "Master-slave replication is best suited for:",
+    "options": [
+      "Write-heavy workloads",
+      "Read-heavy workloads where reads can be served by replicas",
+      "Single-node systems",
+      "Encrypted message queues"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "replication"
+    ],
+    "textbook_reference": "Pramod J Sadalage & Martin Fowler"
+  },
+  {
+    "id": "q_dist_003",
+    "unit_id": "u5",
+    "subtopic_id": "distribution-models",
+    "question_text": "Which is a tradeoff of peer-to-peer (multi-master) replication?",
+    "options": [
+      "It cannot scale beyond two nodes",
+      "Conflict resolution becomes harder when concurrent writes occur",
+      "Reads are slower than master-slave",
+      "It eliminates the need for replication entirely"
+    ],
+    "correct_answer": 1,
+    "difficulty": "hard",
+    "skill_tags": [
+      "replication",
+      "consistency"
+    ],
+    "textbook_reference": "Pramod J Sadalage & Martin Fowler"
+  },
+  {
+    "id": "q_bd_001",
+    "unit_id": "u5",
+    "subtopic_id": "big-data-architectures",
+    "question_text": "The 3 Vs of Big Data are:",
+    "options": [
+      "Velocity, Variety, Volume",
+      "Validity, Volume, Vendor",
+      "Volume, Voltage, Veracity",
+      "Velocity, Vector, Vault"
+    ],
+    "correct_answer": 0,
+    "difficulty": "easy",
+    "skill_tags": [
+      "big_data"
+    ],
+    "textbook_reference": "Pramod J Sadalage & Martin Fowler"
+  },
+  {
+    "id": "q_bd_002",
+    "unit_id": "u5",
+    "subtopic_id": "big-data-architectures",
+    "question_text": "In MapReduce, the Reduce step typically:",
+    "options": [
+      "Reads input from disk and tokenises it",
+      "Aggregates intermediate (key, value) pairs grouped by key",
+      "Compresses the data into a single file",
+      "Schedules tasks across the cluster"
+    ],
+    "correct_answer": 1,
+    "difficulty": "medium",
+    "skill_tags": [
+      "mapreduce"
+    ],
+    "textbook_reference": "Pramod J Sadalage & Martin Fowler"
+  },
+  {
+    "id": "q_bd_003",
+    "unit_id": "u5",
+    "subtopic_id": "big-data-architectures",
+    "question_text": "Why is Spark generally faster than classical MapReduce?",
+    "options": [
+      "It writes intermediate results to disk between every stage",
+      "It performs in-memory computation across stages",
+      "It runs on a single thread per node",
+      "It avoids the use of clusters entirely"
+    ],
+    "correct_answer": 1,
+    "difficulty": "hard",
+    "skill_tags": [
+      "spark",
+      "mapreduce"
+    ],
+    "textbook_reference": "Pramod J Sadalage & Martin Fowler"
+  }
+]

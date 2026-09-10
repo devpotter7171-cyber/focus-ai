@@ -1,0 +1,92 @@
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: focusai-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: focusai
+      POSTGRES_PASSWORD: focusai
+      POSTGRES_DB: focusai
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U focusai"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis (optional, for bandit state caching)
+  redis:
+    image: redis:7-alpine
+    container_name: focusai-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # FastAPI Backend
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: focusai-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://focusai:focusai@postgres:5432/focusai
+      - FRONTEND_URL=http://localhost:3000
+      - SECRET_KEY=docker_dev_secret_change_in_production
+      - ML_STORAGE_PATH=/app/ml/models
+    volumes:
+      - ./backend:/app
+      - ./ml:/app/ml
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Next.js Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: focusai-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1
+    depends_on:
+      - backend
+
+  # Nginx Reverse Proxy (optional, for production-like setup)
+  nginx:
+    image: nginx:alpine
+    container_name: focusai-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./infrastructure/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - frontend
+      - backend
+    profiles:
+      - production
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  default:
+    name: focusai-network

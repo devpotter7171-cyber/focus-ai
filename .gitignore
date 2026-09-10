@@ -1,0 +1,134 @@
+# ============================================================
+# Focus-AI .gitignore
+# ============================================================
+
+# ───── Python ─────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+ENV/
+env/
+
+# Top-level `lib/` is a Python build dir; do NOT block frontend/lib.
+/lib/
+/lib64/
+
+# ───── Node.js / Next.js ─────
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/tsconfig.tsbuildinfo
+
+# ───── Reference repos (huge, not part of this codebase) ─────
+Repos/
+
+# ───── Editor / IDE / tooling ─────
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.kiro/
+*.swp
+*.swo
+*~
+
+# ───── Environment files (always private) ─────
+*.env
+*.env.*
+.env
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+!infrastructure/.env.example
+
+# ───── Secrets & credentials (never commit) ─────
+backend/firebase-adminsdk.json
+backend/*credentials*.json
+backend/*serviceAccount*.json
+*-firebase-adminsdk-*.json
+*.pem
+*.key
+*secret*
+
+# ───── Database files ─────
+*.db
+*.sqlite3
+
+# ───── Build & debug logs ─────
+*.log
+build_log*.txt
+lint_*.txt
+*_output.txt
+*_error.txt
+pytest_out.txt
+tsc_out.txt
+ml_load_error.txt
+debug_*.txt
+
+# ───── Archives ─────
+*.zip
+*.tar.gz
+
+# ───── Generated exports / artifacts ─────
+backend/exports/
+ml/data/*.csv
+!ml/data/.gitkeep
+
+# ───── OS files ─────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ───── Research / Paper artifacts (kept locally, not in public repo) ─────
+research/
+deep-research-report.md
+docs/Focus_AI_Paper.*
+*.tex
+*.aux
+*.bbl
+*.blg
+*.out
+*.toc
+*.synctex.gz
+
+# ───── JSON allow/block list ─────
+# Block JSONs by default to protect accidental credential commits...
+*.json
+# ...but allow these well-known config / data files:
+!package.json
+!package-lock.json
+!tsconfig*.json
+!next.config.json
+!next.config.mjs
+!eslint.config.*
+!firestore.indexes.json
+!firebase.json
+!.firebaserc
+!seed/*.json
+!frontend/types/**/*.json
+!docs/**/*.json
+!scripts/**/*.json
