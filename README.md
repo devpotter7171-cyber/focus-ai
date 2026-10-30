@@ -116,6 +116,7 @@ Focus-AI/
 - Yadamreddy Navaneeth
 - Shoham Mohapatra
 - Ekaksh Agrawal
+- Dev Abhishek
 - Dr. Eleena Mohapatra (Faculty Advisor)
 - Dr. Pratiba K (Faculty Advisor)
 
